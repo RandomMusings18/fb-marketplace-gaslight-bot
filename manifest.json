@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Gaslight Lowball Bot",
+  "version": "1.1",
+  "description": "Reeves-style one-click asshole lowballer for FB Marketplace",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://www.facebook.com/marketplace/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/marketplace/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

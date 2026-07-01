@@ -1,0 +1,1 @@
+console.log('%cGaslight Lowball Bot loaded on Marketplace', 'color: red; font-weight: bold');
